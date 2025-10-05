@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO App</title>
+    <script type="module" src="browser@4.js"></script>
+    <script type="module" src="main.js"></script>
+
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+
+  <header class="w-full max-w-2xl">
+    <h1 class="text-3xl font-bold text-center mb-6">Mis Tareas</h1>
+  </header>
+
+  <main class="w-full max-w-2xl bg-white rounded-lg shadow p-6">
+
+    <form id="task-form" class="mb-6 flex flex-col gap-2 sm:flex-row flex-wrap">
+
+      <input id="task-title" type="text" placeholder="Título" class="border px-3 py-2 rounded" required />
+
+      <input id="task-desc" type="text" placeholder="Descripción" class="border px-3 py-2 rounded" />
+
+      <input id="task-priority" type="number" placeholder="Prioridad (0-5)" min="0" max="5" class="border px-3 py-2 rounded" />
+
+      <input id="task-due" type="datetime-local" class="border px-3 py-2 rounded" />
+
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Agregar</button>
+
+    </form>
+
+    <ul id="tasks-list" class="space-y-2"></ul>
+
+  </main>
+
+</body>
+
+</html>
