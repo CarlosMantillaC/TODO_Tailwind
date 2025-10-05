@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  webapp:
+    build: .
+    container_name: previo1-tailwind-local
+    ports:
+      - "8080:80"

@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  webapp:
+    image: carlosmantillac/previo1-tailwind:latest
+    container_name: previo1-tailwind-hub
+    ports:
+      - "8080:80"
